@@ -23,10 +23,10 @@ local templates = [
     'hub',
     datasource='$PROMETHEUS_DS',
     query='label_values(kube_namespace_status_phase, namespace)',
-    regex='.*-(?:staging|prod)$',
+    regex='.*jhub$',
     # FIXME: Grafana needs a manual 'refresh variables' before it populates this.
     # Maybe another API call?
-    current="utoronto-prod"
+    current="jhub"
   )
 ];
 
